@@ -1,6 +1,4 @@
-import { AiFillStar } from "react-icons/ai"
-import { BsFillBagHeartFill } from "react-icons/bs"
-
+import Cards from "../components/Cards"
 import "./Products.css"
 
 const Products = () => {
@@ -9,41 +7,29 @@ const Products = () => {
         <
         section className = "card-container" >
         <
-        section className = "card" >
+        Cards / >
         <
-        img src = "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg"
-        className = "card-img"
-        alt = "Shoe" / >
+        Cards / >
         <
-        div className = "card-details" >
+        Cards / >
         <
-        h3 className = "card-title" > Shoe < /h3> <
-        section className = "card-reviews" >
+        Cards / >
         <
-        AiFillStar className = "rating-stars" / >
+        Cards / >
         <
-        AiFillStar className = "rating-stars" / >
+        Cards / >
         <
-        AiFillStar className = "rating-stars" / >
+        Cards / >
         <
-        AiFillStar className = "rating-stars" / >
+        Cards / >
         <
-        span className = "total-reviews" > 4 < /span> <
-        /section> <
-        section className = "card-price" >
+        Cards / >
         <
-        div className = "price" >
+        Cards / >
         <
-        del > $250 < /del> $150 <
-        /div> <
-        div className = "bag" >
+        Cards / >
+
         <
-        BsFillBagHeartFill className = "bag-icon" / >
-        <
-        /div> <
-        /section> <
-        /div> <
-        /section> <
         /section> <
         />
     )
