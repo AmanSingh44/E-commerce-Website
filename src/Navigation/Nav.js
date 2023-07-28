@@ -10,7 +10,7 @@ const Nav = () => {
         <
         input type = "text"
         className = "search-input"
-        placeholder = "Enter your Poduct Name" / >
+        placeholder = "Enter your Product Name" / >
         <
         /div> <
         div className = "profile-container" >
