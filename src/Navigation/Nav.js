@@ -1,5 +1,6 @@
 import { FiHeart } from 'react-icons/fi'
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 import "./Nav.css"
 
 const Nav = () => {
@@ -20,11 +21,11 @@ const Nav = () => {
         FiHeart className = 'nav-icons' / >
         <
         /a> <
-        a href = "#" >
+        Link to = "/cart" >
         <
         AiOutlineShoppingCart className = 'nav-icons' / >
         <
-        /a> <
+        /Link> <
         a href = "#" >
         <
         AiOutlineUserAdd className = 'nav-icons' / >

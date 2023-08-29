@@ -1,11 +1,12 @@
 import { useState } from "react";
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import Recommendation from "./Recommendation/Recommendation";
 import Sidebar from "./Sidebars/Sidebar";
 import products from "./db/data";
 import Cards from "./components/Cards";
+import Shop from "./pages/shop";
 
 function App() {
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -72,15 +73,24 @@ function App() {
     return ( <
         >
         <
+        Router >
+        <
         Sidebar handleChange = { handleChange }
         /> <
         Navigation query = { query }
         handleInputChange = { handleInputChange }
+        />
+
+        <
+        Routes >
+        <
+        Route path = "/"
+        element = { < Shop / > }
         /> <
-        Recommendation handleClick = { handleClick }
-        /> <
-        Products result = { result }
-        /> <
+        Route path = "/cart" / >
+        <
+        /Routes> <
+        /Router> <
         />
     )
 }

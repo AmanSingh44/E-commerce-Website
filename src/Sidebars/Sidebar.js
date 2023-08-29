@@ -2,8 +2,9 @@ import Category from "./Category/Category"
 import Price from "./Price/Price"
 import Colors from "./Colors/Colors"
 import "./Sidebar.css"
+import { Link } from "react-router-dom"
 
-const Sidebar = () => {
+const Sidebar = ({ handleChange }) => {
     return ( <
         >
         <
@@ -11,14 +12,15 @@ const Sidebar = () => {
         <
         div className = "logo-container" >
         <
-        h1 > 🛒 < /h1> <
+        Link to = "/" > < h1 > 🛒 < /h1></Link >
+        <
         /div> <
-        Category / >
-        <
-        Price / >
-        <
-        Colors / >
-        <
+        Category handleChange = { handleChange }
+        /> <
+        Price handleChange = { handleChange }
+        /> <
+        Colors handleChange = { handleChange }
+        /> <
         /section> <
         />
     )

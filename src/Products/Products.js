@@ -1,36 +1,10 @@
-import Cards from "../components/Cards"
 import "./Products.css"
 
-const Products = () => {
+const Products = ({ result }) => {
     return ( <
         >
         <
-        section className = "card-container" >
-        <
-        Cards / >
-        <
-        Cards / >
-        <
-        Cards / >
-        <
-        Cards / >
-        <
-        Cards / >
-        <
-        Cards / >
-        <
-        Cards / >
-        <
-        Cards / >
-        <
-        Cards / >
-        <
-        Cards / >
-        <
-        Cards / >
-
-        <
-        /section> <
+        section className = "card-container" > { result } < /section> <
         />
     )
 }

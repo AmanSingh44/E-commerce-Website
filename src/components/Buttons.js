@@ -1,6 +1,9 @@
-const Buttons = () => {
+const Buttons = ({ onClickHandler, value, title }) => {
     return ( <
-        div > Buttons < /div>
+        button onClick = { onClickHandler }
+        value = { value }
+        className = "btns" > { title } <
+        /button>
     )
 }
 
